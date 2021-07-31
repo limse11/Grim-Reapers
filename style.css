@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --bg: rgb(20, 25, 30);
+  --fg: rgb(225, 30, 200);
+}
+@font-face{
+  font-family: agelast;
+  src: url('font/Agelast.otf');
+}
+@font-face{
+  font-family: aquire;
+  src: url('font/Aquire.otf');
+}
+@font-face{
+  font-family: azonix;
+  src: url('font/Azonix.otf');
+}
+@font-face{
+  font-family: madsense;
+  src: url('font/Madsense.otf');
+}
+@font-face{
+  font-family: mechanismo;
+  src: url('font/Mechanismo.otf');
+}
+@font-face{
+  font-family: moonglade;
+  src: url('font/Moonglade.ttf');
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  /*background-image: url("https://wallpaperaccess.com/full/4091251.png");
+  */background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--fg);
+  font-family: agelast;
+  font-size: 2em;
+}
+button{
+  text-transform: uppercase;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--fg);
+  border-radius: 2px;
+  transition-duration: 0.3s
+}
+button:hover{
+  /*background: var(--fg);
+  color: var(--bg);*/
+  box-shadow: 0px 0px 6px var(--fg);
+  cursor: pointer;
+}
+#header{
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(var(--bg), rgba(0,0,0,0));
+}
+#header #hone, #htwo, #hthree{
+  height: 100%;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+#header #hone{
+  width: 10%;
+}
+#header #htwo{
+  width: 80%;
+}
+#header img{
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+#header #hthree{
+  width: 10%;
+}
+#header #htwo h1{
+  font-family: madsense;
+  text-shadow: 0em 0em 0.25em var(--fg);
+  margin: 0;
+  padding: 0;
+}
+#header #htwo h1 span{
+  letter-spacing: 0.7em;
+}
+.tile{
+  height: 30%;
+  background: var(--bg);
+  box-shadow: 0px 0px 10px #000;
+  width: 20%;
+}
